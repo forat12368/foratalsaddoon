@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forat Al-Saddoon | General Trading & Investment</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111;
+    border-bottom: 1px solid rgba(212,175,55,0.3);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #d4af37;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.lang-btn {
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #d4af37;
+    color: #000;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b9962e;
+}
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #d4af37;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(212,175,55,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid rgba(212,175,55,0.3);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #1a1a1a;
+    border: 1px solid rgba(212,175,55,0.3);
+    color: #fff;
+}
+
+button {
+    background: #d4af37;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hidden { display: none; }
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">Forat Al-Saddoon</div>
+<nav>
+<a href="#about">من نحن</a>
+<a href="#services">خدماتنا</a>
+<a href="#projects">مشاريعنا</a>
+<a href="#contact">تواصل</a>
+</nav>
+<button class="lang-btn" onclick="toggleLang()">EN</button>
+</header>
+
+<div class="hero">
+<h1 id="title">فرات السعدون للتجارة العامة والاستثمارات</h1>
+<p id="subtitle">نحو استثمارات ناجحة وشراكات عالمية قوية</p>
+<a href="#contact" class="btn" id="contactBtn">تواصل معنا</a>
+</div>
+
+<section id="about">
+<h2 id="aboutTitle">من نحن</h2>
+<p id="aboutText">
+شركة فرات السعدون مقرها العراق – الموصل – الزهور، وتعمل في مجالات التجارة العامة والاستثمارات المالية وإدارة المشاريع.
+</p>
+</section>
+
+<section id="services">
+<h2 id="servicesTitle">خدماتنا</h2>
+<div class="services">
+<div class="card">
+<h3 id="s1">الاستثمار التجاري</h3>
+<p id="s1t">إدارة المشاريع وتطويرها باحترافية.</p>
+</div>
+<div class="card">
+<h3 id="s2">قطاع المطاعم</h3>
+<p id="s2t">تشغيل وتوسيع العلامات التجارية.</p>
+</div>
+<div class="card">
+<h3 id="s3">الشراكات الدولية</h3>
+<p id="s3t">بناء علاقات مع شركات عالمية.</p>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 id="projectsTitle">مشاريعنا</h2>
+<p id="projectsText">
+نعمل على تطوير مشاريع استراتيجية في مجالات متعددة مع التركيز على العائد الاستثماري والاستدامة.
+</p>
+</section>
+
+<section id="contact">
+<h2 id="contactTitle">تواصل معنا</h2>
+<p>العراق – الموصل – الزهور</p>
+<p>alsaddoonforat@gmail.com</p>
+
+<input type="text" placeholder="الاسم">
+<input type="email" placeholder="البريد الإلكتروني">
+<textarea rows="5" placeholder="رسالتك"></textarea>
+<button>إرسال</button>
+</section>
+
+<footer>
+© 2026 Forat Al-Saddoon. All Rights Reserved.
+</footer>
+
+<script>
+let isArabic = true;
+
+function toggleLang() {
+    isArabic = !isArabic;
+
+    document.documentElement.lang = isArabic ? "ar" : "en";
+    document.documentElement.dir = isArabic ? "rtl" : "ltr";
+
+    document.getElementById("title").innerText = isArabic 
+        ? "فرات السعدون للتجارة العامة والاستثمارات"
+        : "Forat Al-Saddoon General Trading & Investment";
+
+    document.getElementById("subtitle").innerText = isArabic
+        ? "نحو استثمارات ناجحة وشراكات عالمية قوية"
+        : "Driving Successful Investments & Global Partnerships";
+
+    document.getElementById("aboutTitle").innerText = isArabic ? "من نحن" : "About Us";
+    document.getElementById("servicesTitle").innerText = isArabic ? "خدماتنا" : "Our Services";
+    document.getElementById("projectsTitle").innerText = isArabic ? "مشاريعنا" : "Our Projects";
+    document.getElementById("contactTitle").innerText = isArabic ? "تواصل معنا" : "Contact Us";
+
+    document.querySelector(".lang-btn").innerText = isArabic ? "EN" : "AR";
+}
+</script>
+
+</body>
+</html>
